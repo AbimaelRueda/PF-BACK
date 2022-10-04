@@ -4,9 +4,9 @@ import user from "./models/users.model";
 
 const dbInit = () =>
 Promise.all([
-  blockbuster.sync({ alter: true }),
-  comments.sync({ alter: true }),
-  user.sync({ alter: true }),
+  blockbuster.sync({ force: true }),
+  comments.sync({ force: true }),
+  user.sync({ force: true }),
 ])
 
 export default dbInit;

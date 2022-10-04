@@ -7,8 +7,8 @@ const blockbuster_model_1 = __importDefault(require("./models/blockbuster.model"
 const coments_model_1 = __importDefault(require("./models/coments.model"));
 const users_model_1 = __importDefault(require("./models/users.model"));
 const dbInit = () => Promise.all([
-    blockbuster_model_1.default.sync({ alter: true }),
-    coments_model_1.default.sync({ alter: true }),
-    users_model_1.default.sync({ alter: true }),
+    blockbuster_model_1.default.sync({ force: true }),
+    coments_model_1.default.sync({ force: true }),
+    users_model_1.default.sync({ force: true }),
 ]);
 exports.default = dbInit;
