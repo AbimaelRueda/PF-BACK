@@ -37,5 +37,5 @@ users.init({
     category: {
         type: sequelize_1.DataTypes.STRING,
     },
-}, { sequelize: db_1.default, paranoid: true });
+}, { freezeTableName: true, sequelize: db_1.default, paranoid: true });
 exports.default = users;

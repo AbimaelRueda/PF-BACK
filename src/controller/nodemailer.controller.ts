@@ -1,4 +1,4 @@
-import { transporter } from "../nodemailer";
+/*import { transporter } from "../nodemailer";
 import { Request, Response } from "express";
 import users from "../db/models/users.model";
 import { UserService } from "../services/user.service";
@@ -60,5 +60,5 @@ export const nodemailerBannUser = async (req: Request, res: Response) => {
   } catch (e) {
     console.log(e);
   }
-};
+};*/
 

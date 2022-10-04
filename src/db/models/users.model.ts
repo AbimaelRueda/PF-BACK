@@ -62,7 +62,7 @@ users.init(
       type: DataTypes.STRING,
     },
   },
-  { sequelize: sequelizeConnection, paranoid: true }
+  { freezeTableName: true, sequelize: sequelizeConnection, paranoid: true }
 );
 
 export default users;
